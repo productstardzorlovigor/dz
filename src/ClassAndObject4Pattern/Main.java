@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class Main {
 
-    public static String email = "Ab._bc.d@Abc.Com";
+    public static String email = "_Ab._bc.d@Abc.Com";
     public static void main(String[] args) {
         System.out.println(testEmail(email));
     }
