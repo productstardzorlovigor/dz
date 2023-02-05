@@ -1,10 +1,10 @@
-package ClassAndObject5firstProgram;
+package ClassAndObject5firstProgram.Tax;
 
 import java.util.regex.Pattern;
 
 public class Main {
 
-    public static final String[] prise = {"10.2", "0", "-33.9", "777.9", "36.2",
+    private static final String[] prise = {"10.2", "0", "-33.9", "777.9", "36.2",
             "100000000.0", "372.9", "100"};
     private static final Integer TAX_10 = 10;
     private static final Integer TAX_20 = 20;
@@ -16,7 +16,7 @@ public class Main {
     }
 
     private static void printTax() {
-        for (String s : Main.prise) {
+        for (String s : ClassAndObject5firstProgram.Tax.Main.prise) {
             if (Pattern.matches(PATTERN, s)) {
                 double aDouble = Double.parseDouble(s);
                 if (0 < aDouble && aDouble <= 100) {
