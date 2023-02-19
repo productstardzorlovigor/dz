@@ -1,6 +1,7 @@
 package Generetics;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -29,6 +30,12 @@ public class Main {
         wildMustangs.add(new Mustang());
         wildMustangs.add(new Mustang());
         horsesHouse.addHorses(wildMustangs);
+
+        Object[] horses = horsesHouse.getHorses().toArray();
+
+        for (Object hors : horses) {
+            System.out.println(hors);
+        }
 
     }
 
