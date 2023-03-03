@@ -1,8 +1,7 @@
 package SerializeCar;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-
 import java.io.Serializable;
+
 
 public class Car implements Serializable {
 
@@ -12,6 +11,10 @@ public class Car implements Serializable {
     private String owner;
     private int price;
 
+    public Car() {
+        super();
+    }
+
     public Car(String name, int year, Engine engine, String owner, int price) {
         this.name = name;
         this.year = year;
@@ -19,7 +22,6 @@ public class Car implements Serializable {
         this.owner = owner;
         this.price = price;
     }
-
 
     public String getName() {
         return name;

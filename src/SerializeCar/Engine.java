@@ -6,10 +6,6 @@ public class Engine implements Serializable {
 
     private int hp;
 
-    public Engine(int hp) {
-        this.hp = hp;
-    }
-
     public int getHp() {
         return hp;
     }
