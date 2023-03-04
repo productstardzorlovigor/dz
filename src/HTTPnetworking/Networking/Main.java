@@ -19,7 +19,7 @@ public class Main{
         //System.out.println(response.headers().map());
         System.out.println(response.statusCode());
 
-        File file = new File("./Resources/response.json");;
+        File file = new File("./Resources/response.json");
 
         try (PrintWriter fileWrite = new PrintWriter(file, StandardCharsets.UTF_8)) {
             fileWrite.print(response.body());
