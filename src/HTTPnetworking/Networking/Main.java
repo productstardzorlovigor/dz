@@ -8,10 +8,9 @@ import java.nio.charset.StandardCharsets;
 
 public class Main{
     public static void main(String[] args) throws IOException, InterruptedException {
-        HttpClient httpClient = HttpClient .newHttpClient();
+        HttpClient httpClient = HttpClient.newHttpClient();
         HttpRequest httpRequest = HttpRequest.newBuilder()
                 .uri(URI.create("https://mostbet.com/api/v2/slider?section=bonus"))
-                .setHeader("accept", "application/x-www-form-urlencoded")
                 .build();
 
         HttpResponse<String> response = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
